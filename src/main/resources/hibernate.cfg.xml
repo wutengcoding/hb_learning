@@ -16,10 +16,14 @@
 
         <property name="format_sql">true</property>
 
+        <property name="use_identifier_rollback">true</property>
+
+
         <!-- specify the way of generating table -->
         <property name="hbm2ddl.auto">update</property>
         <mapping class="com.wuteng.hiberate.entity.Account"/>
         <mapping resource="account.hbm.xml"/>
+        <mapping resource="News.hbm.xml"/>
 
 
     </session-factory>
